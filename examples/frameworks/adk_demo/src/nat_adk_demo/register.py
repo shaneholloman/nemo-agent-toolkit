@@ -24,8 +24,8 @@ from nat.builder.function_info import FunctionInfo
 from nat.cli.register_workflow import register_function
 from nat.data_models.function import FunctionBaseConfig
 
-from . import nat_time_mcp_tool  # pylint: disable=unused-import  # imported for side effects (registration)
-from . import weather_update_tool  # pylint: disable=unused-import  # imported for side effects (registration)
+from . import nat_time_mcp_tool  # noqa: F401 # pylint: disable=W0611     #imported for side effects (registration)
+from . import weather_update_tool  # noqa: F401 # pylint: disable=W0611     #imported for side effects (registration)
 
 logger = logging.getLogger(__name__)
 
