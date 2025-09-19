@@ -35,6 +35,7 @@ class ADKFunctionConfig(FunctionBaseConfig, name="adk"):
     description: str
     llm_name: str
     tool_names: list[str] = Field(default_factory=list)
+    workflow_alias: str = Field(default="adk_function")
 
 
 @register_function(config_type=ADKFunctionConfig, framework_wrappers=[LLMFrameworkEnum.ADK])
